@@ -1,11 +1,19 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
-const naveClose = document.getElementById('nav-close');
+const navClose = document.getElementById('nav-close');
+const navLink = document.querySelectorAll('.nav__link');
 
-naveClose.addEventListener('click', () =>{
+navLink.forEach(link =>
+    link.addEventListener('click', () =>{
+        navMenu.classList.add('hidden');
+    }),
+    )
+
+navClose.addEventListener('click', () =>{
     navMenu.classList.add('hidden');
 }),
 
 hamburger.addEventListener("click",() =>{
     navMenu.classList.remove('hidden');
 })
+
