@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Nunito:wght@400;500;600;700&family=Open+Sans&family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -434,7 +436,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +486,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -534,15 +536,109 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
+@media (min-width: 480px){
+  .container{
+    max-width: 480px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
-.underline {
-  text-decoration-line: underline;
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024){
+  .container{
+    max-width: 1024;
+  }
+}
+
+.fixed{
+  position: fixed;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-50{
+  z-index: 50;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.bg-primaryColor{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 10 94 / var(--tw-bg-opacity));
+}
+
+.font-oswald{
+  font-family: Oswand, sans-serif;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.text-secondaryColor{
+  --tw-text-opacity: 1;
+  color: rgb(255 204 0 / var(--tw-text-opacity));
+}
+
+.text-rose-800{
+  --tw-text-opacity: 1;
+  color: rgb(159 18 57 / var(--tw-text-opacity));
+}
+
+@layer {
+  body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(1 10 94 / var(--tw-bg-opacity));
+    font-family: DM Sans, sans-serif;
+    letter-spacing: 0.05em;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
