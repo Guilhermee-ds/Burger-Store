@@ -15,15 +15,17 @@
 </head>
 
 <body>
-  <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+  <header class="bg-primaryColor fixed top-0 left-0 w-full z-50" id="header">
     <nav class="container relative h-14 flex justify-between items-center">
       <div>
         <a href="#" class="text-2xl uppercase font-oswald">Ham<span class="text-secondaryColor ">búrguer</span>
         </a>
       </div>
 
-      <div class=" hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
-        <ul class="flex flex-col text-center gap-5 md:flex-row" >
+      <div
+        class=" hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
+        id="nav-menu">
+        <ul class="flex flex-col text-center gap-5 md:flex-row">
           <li>
             <a href="#home" class=" nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
           </li>
@@ -34,7 +36,7 @@
             <a href="#menu" class=" nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
           </li>
           <li>
-            <a href="#review" class=" nav__link hover:text-secondaryColor ease-in duration-200" >Avaliações</a>
+            <a href="#review" class=" nav__link hover:text-secondaryColor ease-in duration-200">Avaliações</a>
           </li>
           <li>
             <a href="#contact" class=" nav__link hover:text-secondaryColor ease-in duration-200">Contato</a>
@@ -49,7 +51,7 @@
       <div class="flex items-center gap-5">
         <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
 
-        <div  class="md:hidden" id="hamburger">
+        <div class="md:hidden" id="hamburger">
           <i class="ri-menu-2-line cursor-pointer text-xl"></i>
         </div>
       </div>
@@ -65,29 +67,81 @@
         <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
           <h1 class="home__title">BARRIGA FELIZ COM HAMBÚRGUERES SABOROSOS</h1>
           <div class="separator mx-auto md:mx-0"></div>
-          <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
-              <div class="text-center">
-                <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
-                <br/>
-                Delicioso
-              </div>
-              <div class="text-center">
-                <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
-                <br/>
-                Fresco
-              </div>
-              <div class="text-center">
-                <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
-                <br/>
-                Orgânico
-              </div>
+          <div class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20">
+            <div class="text-center">
+              <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+              <br />
+              Delicioso
+            </div>
+            <div class="text-center">
+              <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+              <br />
+              Fresco
+            </div>
+            <div class="text-center">
+              <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+              <br />
+              Orgânico
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="category">
+      <div class="container flex flex-col gap-5 md:flex-row">
+          <!-- card 1 -->
+          <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/burger-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
             </div>
 
-            <a href="#" class="btn btn-primary">Saiba mais</a>
-        </div>
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Alimentação</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="#" class="text-blackColor cursor-pointer">Comprar Online</a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/snack-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Alimentação</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="#" class="text-secondaryColor cursor-pointer">Comprar Online</a>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+            <div class="basis-1/3 relative">
+              <img src="img/beverage-5.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+            </div>
+
+            <div>
+              <div class="mb-2">
+                <h4 class="card__title">Alimentação</h4>
+                <p class="text-xs">Lorem ipsum dolor sit.</p>
+              </div>
+
+              <a href="#" class="text-secondaryColor cursor-pointer">Comprar Online</a>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -96,4 +150,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
