@@ -11,24 +11,21 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <title> Burger store</title>
 </head>
 
 <body>
-  <header class="bg-primaryColor fixed top-0 left-0 w-full z-50" id="header">
+  <header class="bg-primaryColor dark:bg-darkColor fixed top-0 left-0 w-full z-50" id="header">
     <nav class="container relative h-14 flex justify-between items-center">
       <div>
-        <a href="#" class="text-2xl uppercase font-oswald">Ham<span class="text-secondaryColor ">búrguer</span>
+        <a href="#" class="text-2xl uppercase  font-oswald">BUR<span class="text-secondaryColor ">GER</span>
         </a>
       </div>
 
       <div
-        class=" hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
-        id="nav-menu">
+        class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor dark:bg-darkColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
+        id="nav-menu" id="nav-menu">
         <ul class="flex flex-col text-center gap-5 md:flex-row">
           <li>
             <a href="#home" class=" nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
@@ -100,98 +97,104 @@
 
     <section id="category">
       <div class="container flex flex-col gap-5 md:flex-row">
-          <!-- card 1 -->
-          <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
-            <div class="basis-1/3 relative">
-              <img src="img/burger-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
-            </div>
-
-            <div>
-              <div class="mb-2">
-                <h4 class="card__title">Alimentação</h4>
-                <p class="text-xs">Lorem ipsum dolor sit.</p>
-              </div>
-
-              <a href="#" class="text-blackColor cursor-pointer">Comprar Online</a>
-            </div>
+        <!-- card 1 -->
+        <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+          <div class="basis-1/3 relative">
+            <img src="img/burger-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
           </div>
 
-          <!-- card 2 -->
-          <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
-            <div class="basis-1/3 relative">
-              <img src="img/snack-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+          <div>
+            <div class="mb-2">
+              <h4 class="card__title">Alimentação</h4>
+              <p class="text-xs">Lorem ipsum dolor sit.</p>
             </div>
 
-            <div>
-              <div class="mb-2">
-                <h4 class="card__title">Lanches</h4>
-                <p class="text-xs">Lorem ipsum dolor sit.</p>
-              </div>
+            <a href="#" class="text-blackColor cursor-pointer">Comprar Online</a>
+          </div>
+        </div>
 
-              <a href="#" class="text-secondaryColor cursor-pointer">Comprar Online</a>
-            </div>
+        <!-- card 2 -->
+        <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+          <div class="basis-1/3 relative">
+            <img src="img/snack-1.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
           </div>
 
-          <!-- card 3 -->
-          <div class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
-            <div class="basis-1/3 relative">
-              <img src="img/beverage-5.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+          <div>
+            <div class="mb-2">
+              <h4 class="card__title">Lanches</h4>
+              <p class="text-xs">Lorem ipsum dolor sit.</p>
             </div>
 
-            <div>
-              <div class="mb-2">
-                <h4 class="card__title">Bebidas</h4>
-                <p class="text-xs">Lorem ipsum dolor sit.</p>
-              </div>
-
-              <a href="#" class="text-secondaryColor cursor-pointer">Comprar Online</a>
-            </div>
+            <a href="#" class="text-secondaryColor cursor-pointer">Comprar Online</a>
           </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+          <div class="basis-1/3 relative">
+            <img src="img/beverage-5.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+          </div>
+
+          <div>
+            <div class="mb-2">
+              <h4 class="card__title">Bebidas</h4>
+              <p class="text-xs">Lorem ipsum dolor sit.</p>
+            </div>
+
+            <a href="#" class="text-secondaryColor cursor-pointer">Comprar Online</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="promo">
       <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
-      <!--PROMO 1-->
-      <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
-      <img src="img/promo-1.png" alt="Promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+        <!--PROMO 1-->
+        <div
+          class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+          <img src="img/promo-1.png" alt="Promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
 
-      <div class="space-y-2 pt-5 md:pt-0">
-        <p class="text-xs text-secondaryColor">Promoção do dia</p>
-        <h3 class="card__title">OBTER UM DESCONTO DE 10% NA PROMOÇÃO DO DIA</h3>
-        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore rem sit inventore, similnima!</p>
-        <br>
-        <a href="#" class="text-lg text-secondaryColor">Comprar online</a>
-      </div>
-      </div>
-      <!--PROMO 2-->
-     <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
-        <img src="img/promo-2.png" alt="Promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
-    
-        <div class="space-y-2 pt-5 md:pt-0">
-          <p class="text-xs text-secondaryColor">Promoção do dia</p>
-          <h3 class="card__title">OBTER UM DESCONTO DE 10% NA PROMOÇÃO DO DIA</h3>
-          <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore rem sit inventore, similnima!</p>
-          <br>
-          <a href="#" class="text-lg text-secondaryColor">Comprar online</a>
+          <div class="space-y-2 pt-5 md:pt-0">
+            <p class="text-xs text-secondaryColor">Promoção do dia</p>
+            <h3 class="card__title">OBTER UM DESCONTO DE 10% NA PROMOÇÃO DO DIA</h3>
+            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore rem sit inventore,
+              similnima!</p>
+            <br>
+            <a href="#" class="text-lg text-secondaryColor">Comprar online</a>
+          </div>
+        </div>
+        <!--PROMO 2-->
+        <div
+          class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+          <img src="img/promo-2.png" alt="Promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+
+          <div class="space-y-2 pt-5 md:pt-0">
+            <p class="text-xs text-secondaryColor">Promoção do dia</p>
+            <h3 class="card__title">OBTER UM DESCONTO DE 10% NA PROMOÇÃO DO DIA</h3>
+            <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore rem sit inventore,
+              similnima!</p>
+            <br>
+            <a href="#" class="text-lg text-secondaryColor">Comprar online</a>
+          </div>
         </div>
       </div>
-  </div>
     </section>
-    
+
     <section id="about">
       <div class="container flex flex-col gap-10 md:flex-row">
         <div class="flex-1">
           <img src="img/about.jpg" alt="Imagem Sobre" class="rounded-lg">
         </div>
-        
+
         <div class="flex-1 ">
           <h2 class=".section__title">AQUI VOCÊ ENCONTRA A COMIDA E BEBIDAS NUM SÓ LUGAR PARA O SEU GOSTO</h2>
           <div class="separotor"></div>
-          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel facere mollitia iste, nobis voluptatum, doloremque incidunt repellat amet, earum vero exercitationem recusandae eaque fugit tempora eos perspiciatis quasi deleniti praesentium.</p>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel facere mollitia iste, nobis
+            voluptatum, doloremque incidunt repellat amet, earum vero exercitationem recusandae eaque fugit tempora eos
+            perspiciatis quasi deleniti praesentium.</p>
           <ul class="grid grid-cols-2 py-5 space-y-1">
             <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
-             Melhor preço</li>
+              Melhor preço</li>
             <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
               Melhor Serviço</li>
             <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor"></i>
@@ -209,13 +212,15 @@
         <div class="max-w-md mx-auto text-center">
           <h2 class="section__title">O NOSSO MELHOR MENU</h2>
           <div class="separator mx-auto"></div>
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio earum alias ad cum, quod in, nulla corporis ipsum dolorum est quidem cupiditate tempore repellendus voluptates voluptate maxime nam nemo.</p>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio earum alias ad cum,
+            quod in, nulla corporis ipsum dolorum est quidem cupiditate tempore repellendus voluptates voluptate maxime
+            nam nemo.</p>
           <div class="tabs_wrap">
             <ul class="flex flex-wrap justify-center gap-3 py-10">
               <li data-tabs="all" class="btn bg-primaryColorLight active:">Todos</li>
               <li data-tabs="food" class="btn bg-primaryColorLight">Alimentação</li>
-              <li  data-tabs="snack"class="btn bg-primaryColorLight">Lanche</li>
-              <li  data-tabs="beverage" class="btn bg-primaryColorLight">Bebidas</li>
+              <li data-tabs="snack" class="btn bg-primaryColorLight">Lanche</li>
+              <li data-tabs="beverage" class="btn bg-primaryColorLight">Bebidas</li>
             </ul>
           </div>
         </div>
@@ -224,14 +229,18 @@
           <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
             <!--  alimentação-->
             <li class="item_wrap food">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/burger-1.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/burger-1.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -239,14 +248,18 @@
             </li>
 
             <li class="item_wrap food">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/burger-2.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/burger-2.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -254,14 +267,18 @@
             </li>
 
             <li class="item_wrap food">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/burger-3.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/burger-3.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -269,14 +286,18 @@
             </li>
 
             <li class="item_wrap food">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/burger-4.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/burger-4.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -284,14 +305,18 @@
             </li>
 
             <li class="item_wrap food">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/burger-5.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/burger-5.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -301,14 +326,18 @@
             <!-- LANCHE-->
 
             <li class="item_wrap snack">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/snack-1.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/snack-1.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -316,14 +345,18 @@
             </li>
 
             <li class="item_wrap snack">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/snack-2.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/snack-2.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -331,14 +364,18 @@
             </li>
 
             <li class="item_wrap snack">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/snack-3.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/snack-3.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -346,14 +383,18 @@
             </li>
 
             <li class="item_wrap snack">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/snack-4.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/snack-4.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -361,14 +402,18 @@
             </li>
 
             <li class="item_wrap snack">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/snack-5.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/snack-5.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -376,14 +421,18 @@
             </li>
 
             <li class="item_wrap snack">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/snack-6.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/snack-6.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -394,14 +443,18 @@
 
 
             <li class="item_wrap beverage">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-2.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/beverage-2.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -409,14 +462,18 @@
             </li>
 
             <li class="item_wrap beverage">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-3.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/beverage-3.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -424,14 +481,18 @@
             </li>
 
             <li class="item_wrap beverage">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-5.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
+              <div
+                class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/beverage-5.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -439,14 +500,18 @@
             </li>
 
             <li class="item_wrap beverage">
-              <div class="h-57 grid place-items-center  bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-1.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
+              <div
+                class="h-57 grid place-items-center  bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/beverage-1.png" alt="Alimentação Imagem"
+                  class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
                 <div class="mb-2">
                   <h4 class="card__title">HAMBÚRGUER DE CARNE DE VACA NORMAL</h4>
-                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus, aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
+                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae
+                    placeat commodi incidunt optio voluptate autem ea error obcaecati aliquam provident? Delectus,
+                    aliquid voluptatibus. Voluptas porro dignissimos architecto sint atque.</p>
                 </div>
 
                 <p class="text-secondaryColor">R$:40.00</p>
@@ -463,14 +528,16 @@
         <div class="max-w-md mx-auto text-center">
           <h2 class="section__title">FEEDBACKS DE NOSSOS CLIENTES</h2>
           <div class="separator mx-auto"></div>
-          <p class="paragraph py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio earum alias ad cum, quod in, nulla corporis ipsum dolorum est quidem cupiditate tempore repellendus voluptates voluptate maxime nam nemo.</p>
+          <p class="paragraph py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio earum alias ad
+            cum, quod in, nulla corporis ipsum dolorum est quidem cupiditate tempore repellendus voluptates voluptate
+            maxime nam nemo.</p>
         </div>
 
         <div class="swiper py-10">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
                 </p>
                 <div class="flex items-center">
@@ -486,7 +553,7 @@
 
             <li class="swiper-slide">
               <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
                 </p>
                 <div class="flex items-center">
@@ -502,7 +569,7 @@
 
             <li class="swiper-slide">
               <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
                 </p>
                 <div class="flex items-center">
@@ -518,7 +585,7 @@
 
             <li class="swiper-slide">
               <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
                 </p>
                 <div class="flex items-center">
@@ -534,7 +601,7 @@
 
             <li class="swiper-slide">
               <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
                 </p>
                 <div class="flex items-center">
@@ -548,7 +615,7 @@
               </div>
             </li>
           </ul>
-          
+
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -562,7 +629,8 @@
         </div>
 
         <div class="flex flex-col gap-3 md:flex-row md:flex-1">
-          <input type="email" placeholder="melhorLoja@gmail.com" class="p-45 text-blackColor rounded-lg outline-none md:w-full">
+          <input type="email" placeholder="melhorLoja@gmail.com"
+            class="p-45 text-blackColor rounded-lg outline-none md:w-full">
           <a href="" class="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75">
             <i class="fa-solid fa-paper-plane"></i>
             Inscrever-se
@@ -571,10 +639,88 @@
       </div>
     </section>
 
-
-
-
   </main>
+
+
+  <footer>
+    <section id="footer">
+      <div class="container">
+        <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <div class="space-y-3">
+              <a href="" class="text-4xl font-oswald uppercase">
+                BUR<span class="text-secondaryColor">GER</span>
+              </a>
+
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta rem repellat numquam!
+              </p>
+            </div>
+          </li>
+
+          <li class="py-5">
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg uppercase font-oswald">SUPORTE</h3>
+              <a href="" class="text-xs hover:text-secondaryColor">FAQ's</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Política de Privacidade</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Termos & Condições</a>
+              <a href="" class="text-xs hover:text-secondaryColor">Contato</a>
+            </div>
+          </li>
+
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase fonr-oswald">Telefone</h3>
+
+              <p class="flex items-center gap-2 text-lg">
+                <i class="fa-solid fa-phone text-secondaryColor"></i>
+                +55 000 000 0000
+              </p>
+            </div>
+
+
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase fonr-oswald">Email</h3>
+
+              <p class="flex items-center gap-2 text-lg py-2">
+                <i class="fa-solid fa-envelope text-secondaryColor"></i>
+                melhorLoja@gmail.com
+              </p>
+            </div>
+          </li>
+
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase fonr-oswald py-2">ENDEREÇO</h3>
+
+              <p class="flex items-center gap-2 text-lg">
+                <i class="fa-solid fa-location-dot text-secondaryColor text-xl "></i>
+                O endereço está aqui
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase fonr-oswald">SIGA-NOS</h3>
+              <div class="space-x-3">
+                <i
+                  class="fa-brands fa-facebook-f text-xl cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                <i
+                  class="fa-brands fa-twitter text-xl cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                <i
+                  class="fa-brands fa-square-instagram text-xl cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="flex flex-col items-center border-t border-primaryColorLight py-10 md:flex-row md:justfy-between">
+          <p class="paragraph">Burger Template Kit by Guilherme</p>
+          <p class="paragraph">Copyright © 2023. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="pagination.js"></script>
 
