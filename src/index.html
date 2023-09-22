@@ -11,6 +11,10 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
   <title> Burger store</title>
 </head>
 
@@ -120,7 +124,7 @@
 
             <div>
               <div class="mb-2">
-                <h4 class="card__title">Alimentação</h4>
+                <h4 class="card__title">Lanches</h4>
                 <p class="text-xs">Lorem ipsum dolor sit.</p>
               </div>
 
@@ -136,7 +140,7 @@
 
             <div>
               <div class="mb-2">
-                <h4 class="card__title">Alimentação</h4>
+                <h4 class="card__title">Bebidas</h4>
                 <p class="text-xs">Lorem ipsum dolor sit.</p>
               </div>
 
@@ -391,7 +395,7 @@
 
             <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-2.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-96 lg:w-24">
+                <img src="img/beverage-2.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
@@ -421,7 +425,7 @@
 
             <li class="item_wrap beverage">
               <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-5.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                <img src="img/beverage-5.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
@@ -435,8 +439,8 @@
             </li>
 
             <li class="item_wrap beverage">
-              <div class="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                <img src="img/beverage-1.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-96 lg:w-24">
+              <div class="h-57 grid place-items-center  bg-primaryColorLight dark:bg-darkColorLight dark:hover:bg-secondaryColor rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                <img src="img/beverage-1.png" alt="Alimentação Imagem" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-10">
               </div>
 
               <div class="pt-5">
@@ -448,7 +452,104 @@
                 <p class="text-secondaryColor">R$:40.00</p>
               </div>
             </li>
+
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="review" class="bg-primaryColorLight py-20">
+      <div class="container">
+        <div class="max-w-md mx-auto text-center">
+          <h2 class="section__title">FEEDBACKS DE NOSSOS CLIENTES</h2>
+          <div class="separator mx-auto"></div>
+          <p class="paragraph py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio earum alias ad cum, quod in, nulla corporis ipsum dolorum est quidem cupiditate tempore repellendus voluptates voluptate maxime nam nemo.</p>
+        </div>
+
+        <div class="swiper py-10">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
+                </p>
+                <div class="flex items-center">
+                  <img src="img/review-1.jpg" alt="review Imagem" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Jonh doe</p>
+                    <p class="paragraph">Engenheiro Civil</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
+                </p>
+                <div class="flex items-center">
+                  <img src="img/review-2.jpg" alt="review Imagem" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Jonh doe</p>
+                    <p class="paragraph">Engenheiro Civil</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
+                </p>
+                <div class="flex items-center">
+                  <img src="img/review-3.jpg" alt="review Imagem" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Jonh doe</p>
+                    <p class="paragraph">Engenheiro Civil</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
+                </p>
+                <div class="flex items-center">
+                  <img src="img/review-4.jpg" alt="review Imagem" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Jonh doe</p>
+                    <p class="paragraph">Engenheiro Civil</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Doloremque facilis nihil sed repudiandae voluptas! Expedita, unde veritatis?
+                </p>
+                <div class="flex items-center">
+                  <img src="img/review-5.jpg" alt="review Imagem" class="w-12 h-12 rounded-full">
+                  <div class="ml-2">
+                    <p class="font-oswald uppercase">Jonh doe</p>
+                    <p class="paragraph">Engenheiro Civil</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -457,7 +558,8 @@
 
 
   </main>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="pagination.js"></script>
 
   <script src="main.js"></script>
 </body>
