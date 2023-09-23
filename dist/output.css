@@ -644,6 +644,10 @@ section{
   left: -1rem;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .left-0{
   left: 0px;
 }
@@ -662,10 +666,6 @@ section{
 
 .top-\[0\.7rem\]{
   top: 0.7rem;
-}
-
-.bottom-4{
-  bottom: 1rem;
 }
 
 .z-50{
