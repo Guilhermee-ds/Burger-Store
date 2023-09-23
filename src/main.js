@@ -17,6 +17,8 @@ hamburger.addEventListener("click",() =>{
     navMenu.classList.remove('hidden');
 })
 
+/**~TABS~*/
+
 const tabs = document.querySelectorAll(".tabs_wrap ul li");
 const all = document.querySelectorAll(".item_wrap");
 const foods = document.querySelectorAll(".food");
@@ -62,7 +64,7 @@ tabs.forEach(tab =>{
     })
 })
 
-
+/**~DARK MODE~*/
 const html = document.querySelector("html");
 const themeBtn = document.getElementById("theme-toggle");
 
@@ -94,16 +96,28 @@ function lightMode() {
 
 window.addEventListener('scroll', scrollUp)
 
-
-const scrollHeader = () => {
-    const header = document.getElementById("header")
-
-    if(this.scrollY >= 50){
-        header.classList.add("border-b","border-secondaryColor");
-    } else {
-        header.classList.remove("border-b","border-secondaryColor");
-    }
-}
-
-window.addEventListener('scroll', scrollHeader)
-
+/**~SCROLL~*/
+const activeLink = () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav__link");
+  
+    let current = "home";
+  
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+  
+      if (this.scrollY >= sectionTop - 60) {
+        current = section.getAttribute("id");
+      }
+    });
+  
+    navLinks.forEach((item) => {
+      item.classList.remove("text-secondaryColor");
+      if (item.href.includes(current)) {
+        item.classList.add("text-secondaryColor");
+      }
+    });
+  };
+  
+  window.addEventListener('scroll', activeLink)
+  
